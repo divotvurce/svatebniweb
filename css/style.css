@@ -309,27 +309,21 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(0, 0, 0, 0.03);
 }
 
-.qbootstrap-cover {
-  background-position: center center;
-  background-size: cover;
+.qbootstrap-cover,
+.qbootstrap-hero {
+  position: relative;
   height: 800px;
   width: 100%;
+  background-position: center; /* Center the image by default */
+  background-size: cover; /* Ensure image covers the div */
 }
 
 @media screen and (max-width: 768px) {
-  .qbootstrap-cover
+  .qbootstrap-cover,
   .qbootstrap-hero {
-    background-position: center center;
-    background-size: cover;
-    height: 100vh; /* Full viewport height to center it on mobile */
-  }
-
-  .display-t,
-  .display-tc {
-    display: flex;
-    align-items: center; /* Vertically centers content */
-    justify-content: center; /* Horizontally centers content */
-    text-align: center;
+    height: 700px;
+    background-position: center center; /* Center image for mobile */
+    background-size: cover; /* Cover the container for full width */
   }
 }
 
