@@ -313,7 +313,7 @@ h1, h2, h3, h4, h5, h6 {
 .qbootstrap-hero {
   position: relative;
   height: 800px;
-  width: 100%;
+  width: 300px;
   background-position: center; /* Center the image by default */
   background-size: cover; /* Ensure image covers the div */
 }
@@ -321,7 +321,8 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   .qbootstrap-cover,
   .qbootstrap-hero {
-    height: 700px;
+    height: 400px;
+    width: 300px;
     background-position: center center; /* Center image for mobile */
     background-size: cover; /* Cover the container for full width */
   }
