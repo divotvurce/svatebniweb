@@ -306,6 +306,15 @@
 		inlineSVG();
 		bgVideo();
 	});
-
+	
+// JavaScript to swap background image on mobile
+document.addEventListener("DOMContentLoaded", function() {
+	const cover = document.querySelector(".qbootstrap-cover");
+	const mobileBackground = cover.getAttribute("data-mobile-background");
+  
+	if (window.innerWidth <= 768 && mobileBackground) {
+	  cover.style.backgroundImage = `url(${mobileBackground})`;
+	}
+  });
 
 }());
