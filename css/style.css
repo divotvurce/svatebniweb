@@ -309,9 +309,7 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(0, 0, 0, 0.03);
 }
 
-.qbootstrap-cover,
-.qbootstrap-hero {
-  position: relative;
+.qbootstrap-cover {
   background-position: center center;
   background-size: cover;
   height: 800px;
@@ -319,29 +317,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 768px) {
-  .qbootstrap-cover,
+  .qbootstrap-cover
   .qbootstrap-hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    background-size: cover; /* Ensures the image covers the background fully */
-    height: 100vh; /* Full viewport height for centering */
+    background-position: center center;
+    background-size: cover;
+    height: 100vh; /* Full viewport height to center it on mobile */
   }
 
-  .display-t {
-    height: 100%; /* Makes display-t take full height for proper alignment */
-    display: flex;
-    align-items: center; /* Centers content vertically */
-    justify-content: center; /* Centers content horizontally */
-  }
-
+  .display-t,
   .display-tc {
+    display: flex;
+    align-items: center; /* Vertically centers content */
+    justify-content: center; /* Horizontally centers content */
     text-align: center;
-    padding: 0 15px; /* Optional: add padding for small screens */
   }
 }
-
 
 .qbootstrap-overlay {
   position: absolute !important;
