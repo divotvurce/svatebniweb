@@ -312,6 +312,7 @@ h1, h2, h3, h4, h5, h6 {
 .qbootstrap-cover,
 .qbootstrap-hero {
   position: relative;
+  background-position: center center;
   height: 800px;
   width: 100%;
 }
