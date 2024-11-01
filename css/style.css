@@ -319,7 +319,12 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   .qbootstrap-cover,
   .qbootstrap-hero {
-    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: contain; /* Adjust if you want it contained or covered */
+    height: 100vh; /* Full viewport height for centering */
   }
 }
 
