@@ -1688,4 +1688,17 @@ h1, h2, h3, h4, h5, h6 {
   animation-fill-mode: both;
 }
 
+/* Default image for larger screens */
+.mobile-friendly-bg {
+  background-image: url('images/qrplatba1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Smaller image for screens narrower than 768px (common mobile breakpoint) */
+@media screen and (max-width: 768px) {
+  .mobile-friendly-bg {
+      background-image: url('images/qrplatba1-small.png');
+  }
+}
 /*# sourceMappingURL=style.css.map */
